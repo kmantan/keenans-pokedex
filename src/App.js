@@ -15,7 +15,7 @@ class App extends React.Component {
           <p>Height: 'height.goes.here'</p>
           <p>Weight: 'weight.goes.here'</p>
         </div>
-        <form action='http://localhost:3000/' type='POST'>
+        <form action='http://localhost:3000/' type='GET'>
         <input type="text" placeholder="Enter Pokemon Name"></input>
         <button type="submit">Find Pokemon</button>
         </form>

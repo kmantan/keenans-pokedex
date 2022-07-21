@@ -5,13 +5,12 @@ import Search from './Search.jsx'
 
 class App extends React.Component {
   render() {
-    const number = '001';
     return (
       <>
       <h1>
       Welcome to Keenan's Pokedex
     </h1>
-    <Search dexNum={number}/>
+    <Search />
       </>
     );
   }

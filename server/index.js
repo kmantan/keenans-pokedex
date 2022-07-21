@@ -5,11 +5,14 @@ const axios = require('axios');
 
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
+  console.log(req);
   let requestedPokemon = req.body.name.toLowerCase();
+
   axios.get('https://pokeapi.co/api/v2/pokemon/' + requestedPokemon)
   .then((data) => {
     console.log('Returned Data: ', data);
+    res.send('allTheInfo.JSON')
   })
   .catch((err) => {
     console.log('Error: ', err);

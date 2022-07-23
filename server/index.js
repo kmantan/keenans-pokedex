@@ -24,6 +24,7 @@ app.post('/', (req, res) => {
       })
       .catch((err) => {
         console.log('Error: ', err);
+        res.json(err)
       })
     } else {
       res.json(resultFromDb[0])

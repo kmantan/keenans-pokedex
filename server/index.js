@@ -30,16 +30,7 @@ app.post('/', (req, res) => {
       res.json(resultFromDb[0])
     }
   })
-  // res.json({hello: 'hello'})
-
-
-
-
 });
-
-app.get('/', (req,res) => {
-  console.log('req.body');
-})
 
 app.listen(3000, () => {
   console.log('Now listening to port 3000.....');
